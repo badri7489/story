@@ -1,0 +1,25 @@
+Train Test Split
+This is the train_test_split model famously used to create a split in the dataset itself. It creates one part for training purpose and another part for the test purpose on the basis of the test_size given to it. We need to specify X (Features) and y (Target) which is splitted into train and test indices. The random_state parameter is used to initialize the internal random number generator, which decides the splitting of data into train and test indices. Setting random_state a fixed value, guarantees that the same sequence of random numbers will be generated each time you run the code.
+train_test_split(X, y, test_size = 0.33, random_state = 42)
+Linear Regression
+It is a very basic and easy machine learning model compared to the others. It just plots a simple straight line for predicting the values. It takes the features and applies the model and fits a straight line which would be having the least mean squared error or the least root mean squared error. The predictions made by this model is frankly not swell when the number of features starts increasing.
+It is in the sklearn.linear_model with the name LinearRegression.
+model = LinearRegression()
+model.fit(X_train, y_train)	fits the model.
+model.predict(X_test)		gives the predictions from the model
+model.intercept_      gives the y intercept of the regression line
+model.coef_     gives the coeffient of the regression line
+Then at the end we can check the accuracy of the model by using the metrics module of the sklearn library. There we can use the mean_squared_error(), mean_absolute_error() functions to calculate the precision of our linear regression model.
+Logistic Regression
+It is a very simple machine learning algorithm used to solve classification problems. Mainly the classifiction is of 0/1, yes/no, true/false, or any classification which is binary. It uses the sigmoid function which converts all the predictions to 0-1 range. Therefore all the values are categorised on the basis of a mid range between 0 and 1 that is 0.5. So all the values above 0.5 are considered 1 and all values below or 0.5 is considered 0.
+It is in the sklearn.linear_model with the name LogisticRegression.
+log = LogisticRegression()
+log.fit(X_train, y_train)	fits the model.
+log.predict(X_test)		gives the predictions from the model
+log.
+
+
+
+
+
+
